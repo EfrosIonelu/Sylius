@@ -39,8 +39,7 @@ class AdminUserExampleFactory extends AbstractExampleFactory implements ExampleF
         private readonly FactoryInterface $userFactory,
         private readonly string $localeCode,
         private readonly FileLocatorInterface $fileLocator,
-        private readonly ImageUploaderInterface $imageUploader,
-        private readonly FactoryInterface $avatarImageFactory,
+        private readonly ImageUploaderInterface $imageUploader
     ) {
         $this->faker = Factory::create();
         $this->optionsResolver = new OptionsResolver();
